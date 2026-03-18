@@ -1,3 +1,6 @@
+# Name: Sandeep Chhetri
+# Student ID: s396070
+
 def is_prime(num):
     for n in range(2,num):
         #checking reminder

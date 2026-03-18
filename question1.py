@@ -1,3 +1,6 @@
+# Name: Sandeep Chhetri
+# Student ID: s396070
+
 #returns true if any character of the word is a digit using loop and false if not
 def contains_digit(word):
     return any(char.isdigit() for char in word)     #isdigit() checks a character whether it is a digit or not 
