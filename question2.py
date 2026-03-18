@@ -27,13 +27,17 @@ while(True):
         break
     print('Limit is up to 100. Enter again!')
 
-#calling the function to get list of prime numbers
-primeNumbers = prime_numbers_upto(limit)
+def main():
+    #calling the function to get list of prime numbers
+    primeNumbers = prime_numbers_upto(limit)
 
-#converting the numbers into string first before joining them
-print('Prime numbers found:', (' '.join(str(num) for num in primeNumbers)))
+    #converting the numbers into string first before joining them
+    print('Prime numbers found:', (' '.join(str(num) for num in primeNumbers)))
 
-print('Total primes found:', len(primeNumbers))
-print('Largest prime:', max(primeNumbers))          #max function gives the largest number in a list
-print('Smallest prime:', min(primeNumbers))         #min function gives the smallest number in a list
-print('Sum of all primes:', sum(primeNumbers))      #sum function gives the sum of all numbers in a list
+    print('Total primes found:', len(primeNumbers))
+    print('Largest prime:', max(primeNumbers))          #max function gives the largest number in a list
+    print('Smallest prime:', min(primeNumbers))         #min function gives the smallest number in a list
+    print('Sum of all primes:', sum(primeNumbers))      #sum function gives the sum of all numbers in a list
+
+if __name__ == '__main__':
+    main()

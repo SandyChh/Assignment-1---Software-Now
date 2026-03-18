@@ -21,5 +21,9 @@ def check_strength(password):
         #for the criteria not mentioned in the question
         return('Can not decide')
     
-password = input('Enter a password: ')
-print(check_strength(password))
+def main():
+    password = input('Enter a password: ')
+    print(check_strength(password))
+
+if __name__ == '__main__':
+    main()
