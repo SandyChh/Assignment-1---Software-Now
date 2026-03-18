@@ -16,18 +16,18 @@ def prime_numbers_upto(limit):
             primeNumbers.append(num)    #saving the number into the list if it is a prime number
     return(primeNumbers)
 
-while(True):
-    #exception handling for wrong input
-    try:
-        limit = int(input('Enter a limit(Max:100): '))
-    except:
-        print('Invalid input!')
-        continue
-    if limit <= 100:
-        break
-    print('Limit is up to 100. Enter again!')
-
 def main():
+    while(True):
+        #exception handling for wrong input
+        try:
+            limit = int(input('Enter a limit(Max:100): '))
+        except:
+            print('Invalid input!')
+            continue
+        if limit <= 100:
+            break
+        print('Limit is up to 100. Enter again!')
+        
     #calling the function to get list of prime numbers
     primeNumbers = prime_numbers_upto(limit)
 
