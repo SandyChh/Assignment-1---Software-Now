@@ -9,8 +9,8 @@ def prime_numbers_upto(limit):
     primeNumbers = []
     #checking the prime numbers up to the limit
     for num in range(2,(limit+1)):
-        if is_prime(num):
-            primeNumbers.append(num)
+        if is_prime(num): #calling the function to check if num is prime or not
+            primeNumbers.append(num) #saving the number into the list if it is a prime number
     return(primeNumbers)
 
 while(True):
@@ -31,6 +31,6 @@ primeNumbers = prime_numbers_upto(limit)
 print('Prime numbers found:', (' '.join(str(num) for num in primeNumbers)))
 
 print('Total primes found:', len(primeNumbers))
-print('Largest prime:', max(primeNumbers))
-print('Smallest prime:', min(primeNumbers))
-print('Sum of all primes:', sum(primeNumbers))
+print('Largest prime:', max(primeNumbers)) #max function gives the largest number in a list
+print('Smallest prime:', min(primeNumbers)) #min function gives the smallest number in a list
+print('Sum of all primes:', sum(primeNumbers))  #sum function gives the sum of all numbers in a list
